@@ -2,6 +2,8 @@ import React from "react";
 import { Spotlight } from "./ui/spotligh-new";
 import { Typewriter } from "./Typewriter";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import HeroButton from "./HeroButton";
+import { FaLocationArrow } from "react-icons/fa";
 function Hero() {
   return (
     <div className="pb-20 pt-36">
@@ -15,6 +17,14 @@ function Hero() {
           <p className="text-center md:tracking-wider mb-4 text-[0.8em] md:text-[0.9em] lg:text-[1em]">
             Hi! I&apos;m Niaz, an AI Engineer creating intelligent solutions.
           </p>
+
+          <a href="#about">
+            <HeroButton
+              title="Show my work"
+              position="right"
+              icon={<FaLocationArrow />}
+            />
+          </a>
         </div>
       </div>
     </div>
